@@ -5,7 +5,11 @@
     "drizzle-orm": "^0.45.1"
   },
   "devDependencies": {
+    "drizzle-erd": "^0.0.1-alpha.11",
     "drizzle-kit": "^0.31.8",
     "tsx": "^4.21.0"
+  },
+  "scripts": {
+    "db:generate-erd": "drizzle-erd --in ./src/db/schema.ts --out erd.svg"
   }
 }
