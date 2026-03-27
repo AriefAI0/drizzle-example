@@ -109,7 +109,7 @@ npx drizzle-kit studio
 npm install drizzle-erd --save-dev
 ```
 
-- Setup script to generate ERD in .svg image
+- Setup script to generate ERD in .svg type image  under [package.json](package.json)
     * must specify the path of generated img
 
 ```
