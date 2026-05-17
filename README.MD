@@ -94,6 +94,20 @@ main();
 npx tsx src/index.ts
 ```
 ---
+### SQL Migration
+
+- Migrate existing data db schema to new sql schema database (without losing any data)
+
+```  
+# we need to generate the new SQL scehma first
+npx drizzle-kit generate
+
+# then we migrate our existing data to new db
+npx drizzle-kit migrate
+```
+the flow is >  we generate new .sql schema > then we migrate our existing data to the new .sql schema
+
+---
 ### Display Database
 
 - Display standard table
