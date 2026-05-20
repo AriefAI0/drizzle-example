@@ -55,6 +55,8 @@ export default defineConfig({
     * You don't manually create the .db file; Drizzle does it for you when you "push" your schema or run a migration.
 
 Run this command to sync your TypeScript schema with a new SQLite file:
+
+- For local development/Fast/Prototype only. Dont use in production.
 ```
 npx drizzle-kit push
 ```
@@ -94,9 +96,10 @@ main();
 npx tsx src/index.ts
 ```
 ---
-### SQL Migration
+### SQL Migration (FOR PRODUCTION AND DEPLOYMENT)
 
 - Migrate existing data db schema to new sql schema database (without losing any data)
+- Can work only with fresh new .db only. Cant mixed up with push CLI.
 
 ```  
 # we need to generate the new SQL scehma first
